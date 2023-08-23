@@ -1,0 +1,1979 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find The Challenge</title>
+    <style>
+        #mina {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #container {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="container">
+            <h2>Find the Challenge</h2>
+            <span>
+                The challenge requires you to identify a hidden <b><i>URL</i></b> within this HTML Page which yould lead
+                you to the actual challenge.
+                <br />Follow below rules to identify and build the required <b><i>URL</i></b>:
+            </span><br />
+            <ul>
+                <li>The <b><i>URL</i></b> is broken into characters and spread across this html page.</li>
+                <li>Your task is to find each character, combine them and get the actual <b><i>URL</i></b>.</li>
+                <li>In order to find the <b><i>URL</i></b> parts (or characters) find all the <i>div</i> elements that
+                    have id = <b>envelop</b>.</li>
+                <li>Every envelop (div) has either of the two children <i>div</i> elements id = <b>letter</b> | id =
+                    <b>stamp</b>.
+                </li>
+                <li>Every letter (div) or stamp (div) hold few children <i>span</i> elements with id = <b>character</b>.
+                </li>
+                <li>Every character (span) is associated with <i>data-value</i> attribute, that holds your
+                    <b><i>URL</i></b> part
+                </li>
+                <li>Find all character (span) within letter (div) of each envelope (div), to build the
+                    <b><i>URL</i></b>.
+                </li>
+                <li>Example: In the <i>HTML</i> snippet below, <b>x</b> is your <b><i>URL</i></b> part.<br />
+                    <pre>
+                        &lt;div id="envelop"&gt;
+                            &lt;div id="letter"&gt;
+                                &lt;span id="character"&gt;&lt;/span&gt; 
+                                &lt;span id="character" data-value="x"&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    </pre>
+                </li>
+                <li>After concatinating all the parts, you will obtain final <b><i>URL</i></b> to reach the actual
+                    challenge.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="h"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="t"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="t"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="p"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="s"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value=":"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="/"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="/"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="d"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="r"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="i"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="v"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="e"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="."></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="g"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="o"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="o"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="g"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="l"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="e"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="."></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="c"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="o"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="m"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="/"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="f"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="i"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="l"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="e"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="/"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="d"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="/"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="1"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="o"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="m"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="V"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="A"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="T"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="I"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="5"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="K"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="0"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="M"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="E"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="A"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="n"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="H"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="E"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="o"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="2"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="Z"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="O"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="l"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="g"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="x"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="8"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="R"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="I"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="I"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="z"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="W"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="K"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="K"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="6"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="p"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="/"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="v"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="i"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="e"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="w"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="?"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="u"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="s"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="p"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="="></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="s"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="letter"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="stamp">
+            <div id="letter">
+                <span id="character"></span>
+            </div>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="h"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="a"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="r"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="i"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <div id="stamp">
+                <span id="character"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <span id="character"></span>
+        <div id="stamp"></div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="n"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+
+    <div id="envelop">
+        <div id="letter">
+            <span id="character" data-value="g"></span>
+            <span id="character"></span>
+        </div>
+    </div>
+</body>
+
+</html>
